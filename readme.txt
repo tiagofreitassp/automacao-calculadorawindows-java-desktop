@@ -11,6 +11,7 @@
   com as versoes estaveis).
 
 2.Configuracoes:
+ .O projeto foi criado para ser executado apenas no Windows.
  .Os metodos para criar o driver Winium estao na classe calculadoraWinCore.
 
 3.Execucao:
