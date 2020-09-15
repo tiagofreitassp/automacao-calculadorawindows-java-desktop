@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a146b641-568f-43ce-93f5-5748de918b61" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLServer/sqlServerConexoes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLServer/sqlServerMetodos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLServer/sqlServerMetodosBKP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLServer/sqlServerScreenshot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLServer/sqlServerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculadoraWindows/calculadoraWinCore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculadoraWindows/calculadoraWinMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculadoraWindows/calculadoraWinPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculadoraWindows/calculadoraWinTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hYEYUfdP4USn0UdFbC0838hl0l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a146b641-568f-43ce-93f5-5748de918b61" name="Default Changelist" comment="" />
+      <created>1600179677976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600179677976</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
