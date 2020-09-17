@@ -13,7 +13,7 @@ Script de automacao de fazer calculos na calculadora do windows usando Java, Win
 * [Eclipse IDE](https://www.eclipse.org/downloads/)
 * [jUnit](https://junit.org/junit5/)
 * [Winium](https://github.com/2gis/Winium)
-* [UiSpy] (https://github.com/2gis/Winium.Cruciatus/tree/master/tools/UISpy)
+* [UISpy](https://github.com/2gis/Winium.Cruciatus/tree/master/tools/UISpy)
 
 ## Dependências:
 * Selenium-java
