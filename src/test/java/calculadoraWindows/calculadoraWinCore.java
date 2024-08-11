@@ -26,13 +26,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.winium.DesktopOptions;
 import org.openqa.selenium.winium.WiniumDriver;
 
-import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
-
 public class calculadoraWinCore{
 	private static WiniumDriver driver;
 	private static String nomePasta;
-	public static ATUTestRecorder grav;
+	//public static ATUTestRecorder grav;
 
     private File pastaEvidencias;
 	
@@ -60,15 +57,13 @@ public class calculadoraWinCore{
 		getDriver().findElement(By.id("Close")).click();
 	}
 
-	public void criarPastaEvidencia(String nPasta) throws InterruptedException, ATUTestRecorderException {
+	public void criarPastaEvidencia(String nPasta) throws InterruptedException {
 		Date dataAtual = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH-mm-ss");
 		nomePasta = sdf.format(dataAtual);
 		
         pastaEvidencias = new File("./Screenshots/"+nPasta+" "+nomePasta);
         pastaEvidencias.mkdir();
-        
-        iniciarVideoEvidencia(nPasta);
     }
 	
     //Tira screenshot apenas da tela principal caso tenha outro monitor
@@ -82,9 +77,7 @@ public class calculadoraWinCore{
 		}
     }
 	
-	public void gerarEvidenciaNoWord(String cenario, String qa, String titulo) throws IOException, InvalidFormatException, IOException, ATUTestRecorderException {
-        finalizarVideoEvidencia();
-		
+	public void gerarEvidenciaNoWord(String cenario, String qa, String titulo) throws IOException, InvalidFormatException, IOException {
 		XWPFDocument doc = new XWPFDocument(new FileInputStream(new File("Template.docx")));
         XWPFParagraph par = doc.createParagraph();
         XWPFRun run1 = par.createRun();
@@ -99,7 +92,7 @@ public class calculadoraWinCore{
 
         run2.addBreak();
         run2.addBreak();
-        run2.setText("3. EVIDÊNCIAS DOS CASOS DE TESTE");
+        run2.setText("3. EVIDï¿½NCIAS DOS CASOS DE TESTE");
         run2.setBold(true);
         run2.setFontSize(11);
         run2.setColor("595959");
@@ -128,17 +121,17 @@ public class calculadoraWinCore{
         }
     }
 	
-	public void iniciarVideoEvidencia(String nomeDoVideoEv) throws ATUTestRecorderException {
-		DateFormat df = new SimpleDateFormat("yy-MM-dd HH-mm-ss");
-		Date date = new Date();
-		
-		grav = new ATUTestRecorder("./Screenshots/"+nomeDoVideoEv+" "+df.format(date),false);
-		grav.start();
-		//Manual em portugues
-		//https://medium.com/@alanpaulooficial/como-gravar-evid%C3%AAncias-de-automa%C3%A7%C3%A3o-de-testes-em-v%C3%ADdeos-utilizando-o-selenium-webdriver-c12a0dab8452
-	}
-	
-	public static void finalizarVideoEvidencia() throws ATUTestRecorderException {
-		grav.stop();
-	}
+//	public void iniciarVideoEvidencia(String nomeDoVideoEv) {
+//		DateFormat df = new SimpleDateFormat("yy-MM-dd HH-mm-ss");
+//		Date date = new Date();
+//
+//		grav = new ATUTestRecorder("./Screenshots/"+nomeDoVideoEv+" "+df.format(date),false);
+//		grav.start();
+//		//Manual em portugues
+//		//https://medium.com/@alanpaulooficial/como-gravar-evid%C3%AAncias-de-automa%C3%A7%C3%A3o-de-testes-em-v%C3%ADdeos-utilizando-o-selenium-webdriver-c12a0dab8452
+//	}
+//
+//	public static void finalizarVideoEvidencia() {
+//		grav.stop();
+//	}
 }

@@ -6,13 +6,11 @@ import java.io.IOException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
 
-import atu.testrecorder.exceptions.ATUTestRecorderException;
-
 public class calculadoraWinPage extends calculadoraWinCore {
 	private String btnZero = "Zero";
 	private String btnUm = "Um";
 	private String btnDois = "Dois";
-	private String btnTres = "Três";
+	private String btnTres = "Trï¿½s";
 	private String btnQuatro = "Quatro";
 	private String btnCinco = "Cinco";
 	private String btnSeis = "Seis";
@@ -32,11 +30,11 @@ public class calculadoraWinPage extends calculadoraWinCore {
 	
 	private String lblResultado = "CalculatorResults";
 	
-	private String msgNaoEpossivelDividirPorZero = "Exibição é Não é possível dividir por zero";
+	private String msgNaoEpossivelDividirPorZero = "Exibiï¿½ï¿½o ï¿½ Nï¿½o ï¿½ possï¿½vel dividir por zero";
 	
 	public calculadoraWinMethods me = new calculadoraWinMethods();
 	
-	public void soma() throws InterruptedException, IOException, InvalidFormatException, ATUTestRecorderException, AWTException {
+	public void soma() throws InterruptedException, IOException, InvalidFormatException, AWTException {
 		criarPastaEvidencia("Calc Win Soma");
 		
 		me.aguardar(3000);
@@ -50,15 +48,15 @@ public class calculadoraWinPage extends calculadoraWinCore {
 		me.clicar(By.name(btnSeis));
 		me.clicar(By.name(btnIgual));
 		
-		me.validarTextoPorAtributo(By.id(lblResultado), "Name", "Exibição é 579");
+		me.validarTextoPorAtributo(By.id(lblResultado), "Name", "Exibiï¿½ï¿½o ï¿½ 579");
 		gerarScreenshots("Soma");
 
 		me.aguardar(1000);
 		gerarEvidenciaNoWord("Realizar uma Soma", "01", "Calculadora Windows");
 	}	
 	
-	public void subtracao() throws InterruptedException, IOException, InvalidFormatException, ATUTestRecorderException, AWTException {
-		criarPastaEvidencia("Calc Win Subtração");
+	public void subtracao() throws InterruptedException, IOException, InvalidFormatException, AWTException {
+		criarPastaEvidencia("Calc Win Subtraï¿½ï¿½o");
 		
 		me.clicar(By.name(btnSete));
 		me.clicar(By.name(btnOito));
@@ -69,15 +67,15 @@ public class calculadoraWinPage extends calculadoraWinCore {
 		me.clicar(By.name(btnSeis));
 		me.clicar(By.name(btnIgual));
 		
-		me.validarTextoPorAtributo(By.id(lblResultado), "Name", "Exibição é 333");
-		gerarScreenshots("Subtração");
+		me.validarTextoPorAtributo(By.id(lblResultado), "Name", "Exibiï¿½ï¿½o ï¿½ 333");
+		gerarScreenshots("Subtraï¿½ï¿½o");
 		
 		me.aguardar(1000);
-		gerarEvidenciaNoWord("Realizar uma Subtração", "02", "Calculadora Windows");
+		gerarEvidenciaNoWord("Realizar uma Subtraï¿½ï¿½o", "02", "Calculadora Windows");
 	}
 	
-	public void multiplicao() throws InterruptedException, IOException, InvalidFormatException, ATUTestRecorderException, AWTException {
-		criarPastaEvidencia("Calc Win Multiplicação");
+	public void multiplicao() throws InterruptedException, IOException, InvalidFormatException, AWTException {
+		criarPastaEvidencia("Calc Win Multiplicaï¿½ï¿½o");
 		
 		me.clicar(By.name(btnTres));
 		me.clicar(By.name(btnUm));
@@ -85,15 +83,15 @@ public class calculadoraWinPage extends calculadoraWinCore {
 		me.clicar(By.name(btnTres));
 		me.clicar(By.name(btnIgual));
 		
-		me.validarTextoPorAtributo(By.id(lblResultado), "Name", "Exibição é 93");
-		gerarScreenshots("Multiplicação");
+		me.validarTextoPorAtributo(By.id(lblResultado), "Name", "Exibiï¿½ï¿½o ï¿½ 93");
+		gerarScreenshots("Multiplicaï¿½ï¿½o");
 		
 		me.aguardar(1000);
-		gerarEvidenciaNoWord("Realizar uma Multiplicação", "03", "Calculadora Windows");
+		gerarEvidenciaNoWord("Realizar uma Multiplicaï¿½ï¿½o", "03", "Calculadora Windows");
 	}
 	
-	public void divisao() throws InterruptedException, IOException, InvalidFormatException, ATUTestRecorderException, AWTException {
-		criarPastaEvidencia("Calc Win Divisão");
+	public void divisao() throws InterruptedException, IOException, InvalidFormatException, AWTException {
+		criarPastaEvidencia("Calc Win Divisï¿½o");
 		
 		me.clicar(By.name(btnTres));
 		me.clicar(By.name(btnZero));
@@ -102,7 +100,7 @@ public class calculadoraWinPage extends calculadoraWinCore {
 		me.clicar(By.name(btnIgual));
 		
 		me.validarTextoPorAtributo(By.id(lblResultado), "Name", msgNaoEpossivelDividirPorZero);
-		gerarScreenshots("Divisão Erro");
+		gerarScreenshots("Divisï¿½o Erro");
 		
 		me.clicar(By.id(btnVoltar));
 		
@@ -112,10 +110,10 @@ public class calculadoraWinPage extends calculadoraWinCore {
 		me.clicar(By.name(btnTres));
 		me.clicar(By.name(btnIgual));
 		
-		me.validarTextoPorAtributo(By.id(lblResultado), "Name", "Exibição é 10");
-		gerarScreenshots("Divisão");
+		me.validarTextoPorAtributo(By.id(lblResultado), "Name", "Exibiï¿½ï¿½o ï¿½ 10");
+		gerarScreenshots("Divisï¿½o");
 		
 		me.aguardar(1000);
-		gerarEvidenciaNoWord("Realizar uma Divisão", "04", "Calculadora Windows");
+		gerarEvidenciaNoWord("Realizar uma Divisï¿½o", "04", "Calculadora Windows");
 	}
 }
